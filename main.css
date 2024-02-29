@@ -1,0 +1,39 @@
+/* Reset de estilos */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.container{
+  background-color: black;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+h1{
+  color: antiquewhite;
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.bouquet {
+  font-size: 48px; /* Tamanho do ícone */
+  color: #f7c52b; /* Cor do ícone */
+  position: relative;
+  animation: flowerAnimation 3s ease-in-out infinite alternate; /* Adiciona uma animação ao buquê */
+}
+
+@keyframes flowerAnimation {
+  0% {
+      transform: translateY(0); /* Começa a partir da posição inicial */
+  }
+  100% {
+      transform: translateY(-20px); /* Move para cima */
+  }
+}
